@@ -78,6 +78,16 @@ public class AntrianLayanan {
         return size;
     }
 
+    public void cekAntrianBelakang() {
+        if (IsEmpty()) {
+            System.out.println("Antrian kosong.");
+        } else {
+            System.out.println("Mahasiswa paling belakang: ");
+            System.out.println("NIM - NAMA - PRODI - KELAS");
+            data[rear].tampilkanData();
+        }
+    }
+
     public void clear() {
         if (!IsEmpty()) {
             front = rear = -1;
